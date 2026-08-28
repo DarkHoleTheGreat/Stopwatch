@@ -5,6 +5,7 @@ const timer = document.getElementById("time");
 const startBtn = document.getElementById("start");
 const stopBtn = document.getElementById("stop");
 const resetBtn = document.getElementById("reset");
+const lapBtn = document.getElementById("lap");
 const lapsContainer = document.getElementById("laps");
 
 function chageStyle() {
@@ -36,11 +37,14 @@ stopBtn.addEventListener("click", ()=> {
     startBtn.removeAttribute("disabled");
     clearInterval(intervalId);
     chageStyle();
-    const lapTime = timer.textContent;
-    lapsContainer.innerHTML += "<p>" + lapTime + "</p>";
 })
 
 resetBtn.addEventListener("click", ()=> {
     seconds = 0;
     timer.textContent = "00:00:00";
+})
+
+lapBtn.addEventListener("click", ()=> {
+    const lapTime = timer.textContent;
+    lapsContainer.innerHTML += "<p>" + lapTime + "</p>";
 })
