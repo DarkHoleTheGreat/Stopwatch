@@ -32,16 +32,21 @@ h1 {
     font-size: 128px;
 }
 
-.menu button {
+.menu {
+    margin: 20px;
+}
+
+.btn {
     background-color: black;
     color: #39FF14;
     border: #39FF14 1px solid;
     padding: 20px;
     width: 180px;
     font-size: 36px;
+    cursor: pointer;
 }
 
-.menu button:hover {
+.btn:hover {
     background-color: #39FF14;
     color: black;
 }
@@ -61,3 +66,21 @@ h1 {
     padding: 20px;
     font-size: 28px;
 } 
+
+.disabled {
+    background-color: black;
+    color: #177e05;
+    border: #177e05 1px solid;
+    padding: 20px;
+    width: 180px;
+    font-size: 36px;
+}
+
+.disabled:hover {
+    background-color: black;
+}
+
+#laps {
+    font-size: 20px;
+    text-align: center;
+}
